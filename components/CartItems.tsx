@@ -26,13 +26,13 @@ function CartItems() {
 
   return (
     <div className="w-[64%]">
-      <div className="ml-1 mb-1 flex gap-2 bg-[#fafafa] p-3">
+      <div className="mb-4 flex gap-2 bg-[#fafafa] p-3">
         <input type="checkbox" />
         <h3>Select all</h3>
       </div>
       {cartItems?.map((cartItem: any, index: number) => {
         return (
-          <div className="mb-4 bg-[#fafafa] p-3" key={index}>
+          <div className="mb-1 bg-[#fafafa] p-3" key={index}>
             <div className="flex justify-between items-center">
               <div className="flex gap-2 w-1/2">
                 <input type="checkbox" />

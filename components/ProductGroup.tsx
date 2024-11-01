@@ -5,10 +5,10 @@ import Link from "next/link";
 
 function ProductGroup({ products }: { products: any }) {
   return (
-    <div className="grid grid-cols-6 gap-y-6 gap-x-2">
+    <div className="grid grid-cols-5 gap-y-6 gap-x-4">
       {products.map((product: any) => {
         return (
-          <Link href={`/product/${product.id}`} className="bg-white p-3 space-y-2 hover:shadow-[3px_3px_5px_rgba(0,0,0,0.3)]">
+          <Link key={product.id} href={`/product/${product.id}`} className="bg-white p-4 space-y-2 hover:shadow-[3px_3px_5px_rgba(151, 2, 2, 0.3)] rounded-md">
             <div className="relative h-40 ">
               <Image fill src={product.image} alt={product.title} />
             </div>

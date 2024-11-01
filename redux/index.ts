@@ -2,7 +2,6 @@ import { configureStore } from "@reduxjs/toolkit";
 import CartSlice from "./CartSlice";
 import storage from "redux-persist/lib/storage";
 import {
-  persistStore,
   persistReducer,
   FLUSH,
   REHYDRATE,

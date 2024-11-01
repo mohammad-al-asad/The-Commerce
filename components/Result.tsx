@@ -9,9 +9,9 @@ function Result({
   query: any;
 }) {
   return (
-    <div>
-      <h1 className="p-3 font-semibold">{`${filteredProduct.length} items found for`} <span className="text-main">{`"${query}"`}</span></h1>
-      <div className="grid grid-cols-6 gap-5">
+    <div className="px-10">
+      <h1 className="py-3 text-white font-[400]">{`${filteredProduct.length} items found for`} &quot;<span className="text-red-400 font-semibold">{query}</span>&quot;</h1>
+      <div className="grid grid-cols-5 gap-5">
       {filteredProduct.map((item:any,index:number)=><ProductCard product={item} key={index}/>)}
       </div>
     </div>

@@ -31,7 +31,7 @@ function TotalCart() {
           type="text"
           placeholder="Enter Voucher Code"
         />
-        <button className="w-20 bg-[#01a4d6] ml-2 p-2 text-white" type="submit">
+        <button className="w-20 bg-[#01a4d6] mt-2 ml-1 p-2 text-white" type="submit">
           Apply
         </button>
       </form>

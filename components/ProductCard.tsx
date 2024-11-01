@@ -2,16 +2,17 @@ import React from "react";
 import Image from "next/image";
 import Rating from "./utility/Rating";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 function ProductCard({ product }: { product: any }) {
   const router = useRouter();
 
   return (
-    <div
-      onClick={() => router.push(`/product/${product.id}`)}
-      className="hover:shadow-[4px_4px_10px_rgba(0,0,0,0.3)] group/card p-3 h-auto flex flex-col items-center justify-between rounded-sm"
+    <Link
+      href={`/product/${product.id}`}
+      className="hover:shadow-[8px_4px_10px_rgb(255, 255, 255)] group/card p-3 h-auto flex flex-col items-center justify-between rounded-md bg-white"
     >
-      <div className="relative mb-4 w-[130px] h-[160px] p-2">
+      <div className="relative mb-4 w-[170px] h-[160px] p-2">
         <Image
           className="mix-blend-multiply"
           priority
@@ -28,7 +29,7 @@ function ProductCard({ product }: { product: any }) {
         <Rating rating={product.rating} />
         <h1 className="font-semibold text-main">{`$${product.price}`}</h1>
       </div>
-    </div>
+    </Link>
   );
 }
 

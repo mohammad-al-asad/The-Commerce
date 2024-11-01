@@ -3,7 +3,6 @@ import { Inter } from "next/font/google";
 import Header from "@/components/Header";
 import "./globals.css";
 import ReduxProvider from "@/components/ReduxProvider";
-import { ThemeProvider } from "@material-tailwind/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-[#EFF0F5]`}>
+      <body className={`${inter.className} bg-[#646568]`}>
         <ReduxProvider>
           <Header />
           {children}
