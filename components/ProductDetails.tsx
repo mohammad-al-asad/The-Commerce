@@ -49,7 +49,7 @@ function ProductDetails({ res }: { res: any }) {
     return (
       <div className="grid grid-rows-2 place-items-center gap-3 lg:grid-rows-1 lg:grid-cols-2 w-fit md:w-[50%] lg:w-[65%] text-white bg-main p-3 rounded-lg">
         <div className="relative bg-white rounded-md w-[350px] h-[300px] md:w-full lg:h-full">
-          <Image className="p-4" src={product.image} alt={product.title} fill />
+          <Image className="p-4" src={`/products/${product.image}`} alt={product.title} fill />
         </div>
 
         <div className="my-auto p-4 w-[350px] md:w-[365px] lg:w-full">

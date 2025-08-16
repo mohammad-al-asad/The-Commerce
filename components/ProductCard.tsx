@@ -4,6 +4,7 @@ import Rating from "./utility/Rating";
 import Link from "next/link";
 
 function ProductCard({ product }: { product: any }) {
+console.log(product);
 
   return (
     <Link
@@ -14,7 +15,7 @@ function ProductCard({ product }: { product: any }) {
         <Image
           className="mix-blend-multiply"
           priority
-          src={product.image}
+          src={`/products/${product.image}`}
           alt={product.title}
           fill
         />
