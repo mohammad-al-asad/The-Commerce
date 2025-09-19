@@ -2,7 +2,7 @@
 
 This is a production ready Responsive Multi-functional E-Commerce site.
 
-Go Live: https://the-commerce.onrender.com
+Go Live: https://the-commerce-ten.vercel.app
 <br/>
 <br/>
 
